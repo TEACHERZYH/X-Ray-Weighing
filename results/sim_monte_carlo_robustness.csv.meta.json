@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-06-28T07:42:01.399979+00:00",
+  "script": "experiments/run_monte_carlo_robustness.py",
+  "argv": [
+    "experiments/run_monte_carlo_robustness.py",
+    "--replicates",
+    "30",
+    "--seconds",
+    "1800",
+    "--output",
+    "results/sim_monte_carlo_robustness.csv"
+  ],
+  "args": {
+    "output": "results/sim_monte_carlo_robustness.csv",
+    "replicates": 30,
+    "seconds": 1800,
+    "sites": 4,
+    "devices_per_site": 2,
+    "installs_per_device": 2,
+    "seed": 20260628,
+    "calibrate_samples": "20,60,180"
+  },
+  "python": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "3adf19d5ab47515725808df5de4311056a9d10ff",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "results/sim_monte_carlo_robustness.csv",
+      "exists": true,
+      "size_bytes": 142818,
+      "sha256": "6956680c21ee1e5aca137def7828a20c5045ec8a7c0268d9bd8c6a2121233fd4"
+    }
+  ],
+  "notes": "Monte Carlo leave-one-site robustness evaluation using the X-ray belt weighing simulator."
+}

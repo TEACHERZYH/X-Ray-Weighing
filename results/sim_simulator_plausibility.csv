@@ -1,0 +1,29 @@
+metric,value,unit,status,lower_bound,upper_bound,note
+row_count,57600,samples,PASS,10000,,small benchmark dataset should still cover many operating states
+site_count,4,sites,PASS,4,,cross-site split requires multiple simulated sites
+device_count,8,site-device pairs,PASS,8,,device variation is required for installation robustness tests
+install_count,16,installations,PASS,16,,installation variation is required for self-calibration tests
+coal_type_count,4,coal types,PASS,4,,anthracite=18000; bituminous_A=3600; bituminous_B=10800; lignite=25200
+empty_ratio,0.126354,ratio,PASS,0.05,0.35,empty samples are needed for online I0 estimation but should not dominate
+ash_missing_ratio,0.408108,ratio,PASS,0.2,0.6,partial ash availability matches the current data-access assumption
+rx_value_range,3203.338 to 10162.366,detector counts,PASS,1.0,,mean=6269.330; p05=4506.229; p95=8713.526
+tube_voltage_kv_range,78.523 to 81.358,kV,PASS,70.0,90.0,mean=79.999; p05=79.420; p95=80.574
+tube_current_ma_range,1.426 to 1.573,mA,PASS,0.5,5.0,mean=1.500; p05=1.473; p95=1.527
+source_temp_c_range,24.451 to 44.249,degC,PASS,-10.0,90.0,mean=34.180; p05=26.242; p95=42.251
+env_temp_c_range,9.407 to 26.753,degC,PASS,-30.0,60.0,mean=18.000; p05=10.090; p95=25.926
+env_humidity_pct_range,35.595 to 75.332,%,PASS,0.0,100.0,mean=56.227; p05=37.548; p95=72.865
+belt_speed_mps_range,2.266 to 2.536,m/s,PASS,1.0,5.0,mean=2.400; p05=2.339; p95=2.461
+ash_pct_range,1.953 to 31.343,%,PASS,0.0,50.0,mean=17.438; p05=7.805; p95=25.707
+true_loading_kgpm_range,0.000 to 206.108,kg/m,PASS,0.0,250.0,mean=78.644; p05=0.000; p95=142.247
+true_flow_kgps_range,0.000 to 487.655,kg/s,PASS,0.0,600.0,mean=188.677; p05=0.000; p95=342.505
+env_temp_span,17.346,degC,PASS,10.0,,environmental drift should be visible in the simulator
+humidity_span,39.737,%,PASS,30.0,,humidity drift should be visible in the simulator
+rx_value_span,6959.028,detector counts,PASS,1000.0,,detector signal should vary with load and source/detector drift
+source_minus_env_mean,16.180,degC,PASS,10.0,25.0,source tube should be warmer than ambient in the synthetic device model
+corr_rx_loading,-0.916788,Pearson r,PASS,,-0.7,X-ray attenuation should make detector counts decrease as loading increases
+corr_loading_flow,0.999439,Pearson r,PASS,0.95,,mass flow is generated from loading and belt speed
+corr_speed_flow,-0.019350,Pearson r,WARN,0.05,,belt speed has a secondary positive contribution because loading dominates flow variance
+timestamp_integrity_failures,0,installations,PASS,0,0,timestamp_s should restart at zero and increase by one within each installation
+cumulative_mass_monotonic_failures,0,installations,PASS,0,0,true_cum_mass_kg should be monotonic within each installation
+cumulative_mass_sum_mismatch_failures,0,installations,PASS,0,0,final cumulative mass should match summed flow samples
+install_final_mass_range,523889.7 to 875398.6,kg,PASS,,,range of total simulated mass per installation

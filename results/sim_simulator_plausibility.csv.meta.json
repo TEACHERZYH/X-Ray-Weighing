@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-06-27T23:35:32.097269+00:00",
+  "script": "experiments/analyze_simulator_plausibility.py",
+  "argv": [
+    "experiments\\analyze_simulator_plausibility.py"
+  ],
+  "args": {
+    "input": "data/simulated/xray_belt_sim.csv",
+    "output": "results/sim_simulator_plausibility.csv"
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "03474395559476d4290b6c2e626ba5e32ae8db03",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "?? results/sim_simulator_plausibility.csv"
+    ],
+    "status_short_all": [
+      "?? results/sim_simulator_plausibility.csv"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "data\\simulated\\xray_belt_sim.csv",
+      "exists": true,
+      "size_bytes": 8267676,
+      "sha256": "96cae47765ce67b0415601c80c75899339310ede1592da802faf00c766ce39a3"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results\\sim_simulator_plausibility.csv",
+      "exists": true,
+      "size_bytes": 2974,
+      "sha256": "76ccc3386ec8de32bcf38e4bdcf3e72470055b2bd09c777507b1b0c9125a2de1"
+    }
+  ],
+  "notes": "Plausibility audit for the synthetic X-ray belt weighing simulator and manuscript data-mouth alignment."
+}

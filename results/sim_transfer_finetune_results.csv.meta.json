@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-06-26T00:19:55.004738+00:00",
+  "script": "/data/zyh/projects/xray-mass-consistency-e91b0f2/experiments/run_transfer_finetune.py",
+  "argv": [
+    "experiments/run_transfer_finetune.py",
+    "--target-input",
+    "/data/zyh/datasets/xray-mass-consistency-e91b0f2/xray_belt_transfer_target.csv",
+    "--pretrained-checkpoint",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+    "--base-model",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+    "--output",
+    "/data/zyh/projects/xray-mass-consistency-e91b0f2/results/sim_transfer_finetune_results.csv",
+    "--finetuned-checkpoint",
+    "/data/zyh/projects/xray-mass-consistency-e91b0f2/models/pgt_sc_tcn_transfer_finetuned.pt",
+    "--finetune-epochs",
+    "8",
+    "--scratch-epochs",
+    "8",
+    "--batch-size",
+    "256",
+    "--finetune-samples-per-install",
+    "180",
+    "--threads",
+    "8"
+  ],
+  "args": {
+    "target_input": "/data/zyh/datasets/xray-mass-consistency-e91b0f2/xray_belt_transfer_target.csv",
+    "pretrained_checkpoint": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+    "base_model": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+    "output": "/data/zyh/projects/xray-mass-consistency-e91b0f2/results/sim_transfer_finetune_results.csv",
+    "finetuned_checkpoint": "/data/zyh/projects/xray-mass-consistency-e91b0f2/models/pgt_sc_tcn_transfer_finetuned.pt",
+    "adapt_fraction": 0.2,
+    "calibration_samples": "20,60,180",
+    "calibration_min_flow": 5.0,
+    "finetune_samples_per_install": 180,
+    "finetune_epochs": 8,
+    "scratch_epochs": 8,
+    "batch_size": 256,
+    "lr": 0.0002,
+    "scratch_lr": 0.001,
+    "threads": 8,
+    "num_workers": 0,
+    "device": "auto",
+    "seed": 11
+  },
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "e91b0f2",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "/data/zyh/datasets/xray-mass-consistency-e91b0f2/xray_belt_transfer_target.csv",
+      "exists": true,
+      "size_bytes": 16607409,
+      "sha256": "b0fe05883a3f13808c4f2171e8ca8d3b8f9cedf11facc847139d6756aec448ac"
+    },
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+      "exists": true,
+      "size_bytes": 228608,
+      "sha256": "f08ca71ad18a793846284ac68a161d961a294ac15f340c5648b4671ce1540d58"
+    },
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+      "exists": true,
+      "size_bytes": 1658,
+      "sha256": "adef0cb7fc160b630555dd56e86a422f2a25368fa1e67c8ebcf6d84cb59742f8"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/data/zyh/projects/xray-mass-consistency-e91b0f2/results/sim_transfer_finetune_results.csv",
+      "exists": true,
+      "size_bytes": 3242,
+      "sha256": "862e80ab13e02d6ea3ecbe96c2bb15c09ec2bb2c87de0b26f07725830814c390"
+    },
+    {
+      "path": "/data/zyh/projects/xray-mass-consistency-e91b0f2/models/pgt_sc_tcn_transfer_finetuned.pt",
+      "exists": true,
+      "size_bytes": 226896,
+      "sha256": "bb2f32d0905aefd22ef27edb8b09c59aa063062ad2b434f22a5f2c22587d8bf4"
+    }
+  ],
+  "notes": "Target-domain transfer and few-sample fine-tuning validation for simulation-pretrained PG-TSC."
+}

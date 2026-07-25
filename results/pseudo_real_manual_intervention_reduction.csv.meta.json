@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-06-29T07:05:13.798561+00:00",
+  "script": "F:\\2026\\X-RAY\\experiments\\analyze_manual_intervention_reduction.py",
+  "argv": [
+    "experiments\\analyze_manual_intervention_reduction.py",
+    "--input",
+    "data\\real_like\\pseudo_real_xray_belt.csv",
+    "--output",
+    "results\\pseudo_real_manual_intervention_reduction.csv"
+  ],
+  "args": {
+    "input": "data\\real_like\\pseudo_real_xray_belt.csv",
+    "output": "results\\pseudo_real_manual_intervention_reduction.csv",
+    "seed": 20260629,
+    "initial_budget": 20,
+    "extra_budgets": "10,20,60,180",
+    "adapt_fraction": 0.3,
+    "maintenance_end_fraction": 0.65,
+    "anchor_bound_pct": 5.0
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "8b09ecb4938da676c0b5aabeb6a3036c888f2c05",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "data/real_like/pseudo_real_xray_belt.csv",
+      "exists": true,
+      "size_bytes": 4492070,
+      "sha256": "b321991a4d0b516d5016583c0caa41fb281329b2493daa597047c4ba735d64b6"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/pseudo_real_manual_intervention_reduction.csv",
+      "exists": true,
+      "size_bytes": 2159,
+      "sha256": "1942c648901881e0f26c2fb26eabfd0ca9945c056e670b6e16541f6ded7125ce"
+    }
+  ],
+  "notes": "Pseudo-real manual intervention reduction experiment. Not field evidence."
+}

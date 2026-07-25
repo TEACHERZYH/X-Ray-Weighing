@@ -1,0 +1,16 @@
+metric,value,unit,note
+rows,36000,samples,total pseudo-real canonical rows
+site_count,5,sites,"S01,S02,S03,S04,S05"
+device_count,10,devices,unique anonymized X-ray devices
+install_count,30,installations,globally unique install_id values
+seconds_per_install,1200,s,nominal duration before inter-install gap
+empty_ratio,0.15963888888888889,ratio,5747 empty samples
+loaded_rows,30253,samples,true_flow_kgps > 0
+ash_missing_ratio,0.3754722222222222,ratio,13517 ash_missing samples
+coal_type_count,4,classes,anthracite=9600; bituminous_A=4800; bituminous_B=10800; lignite=10800
+total_mass,6951006.945,kg,sum of per-second true_flow_kgps samples
+env_temp_span,16.7,degC,9.7 to 26.4
+humidity_span,37.89999999999999,%,36.2 to 74.1
+rx_value_span,6375.0,counts,3673 to 10048
+corr_rx_loading,-0.9029633604561496,Pearson r,should be strongly negative
+corr_loading_flow,0.9994632011102317,Pearson r,should be strongly positive

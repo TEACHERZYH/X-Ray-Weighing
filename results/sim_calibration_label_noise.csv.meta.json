@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-06-28T21:21:11.572498+00:00",
+  "script": "F:\\2026\\X-RAY\\experiments\\analyze_calibration_label_noise.py",
+  "argv": [
+    "experiments\\analyze_calibration_label_noise.py",
+    "--replicates",
+    "30"
+  ],
+  "args": {
+    "target_input": "data/simulated/xray_belt_transfer_target.csv",
+    "pretrained_checkpoint": "models/pgt_sc_tcn_pretrained.pt",
+    "base_model": "models/pgt_sc_base_model.pkl",
+    "output": "results/sim_calibration_label_noise.csv",
+    "summary": "results/sim_calibration_label_noise_summary.csv",
+    "adapt_fraction": 0.2,
+    "budgets": "20,60,180",
+    "replicates": 30,
+    "min_pred_flow": 5.0,
+    "batch_size": 256,
+    "threads": 8,
+    "device": "auto",
+    "seed": 20260629
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "63657e7f5210c83383c6254fb16beb78813efbbf",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "M results/sim_transfer_target_summary.csv.meta.json"
+    ],
+    "status_short_all": [
+      "M results/sim_transfer_target_summary.csv.meta.json"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "data/simulated/xray_belt_transfer_target.csv",
+      "exists": true,
+      "size_bytes": 16607409,
+      "sha256": "b0fe05883a3f13808c4f2171e8ca8d3b8f9cedf11facc847139d6756aec448ac"
+    },
+    {
+      "path": "models/pgt_sc_tcn_pretrained.pt",
+      "exists": true,
+      "size_bytes": 228608,
+      "sha256": "f08ca71ad18a793846284ac68a161d961a294ac15f340c5648b4671ce1540d58"
+    },
+    {
+      "path": "models/pgt_sc_base_model.pkl",
+      "exists": true,
+      "size_bytes": 1658,
+      "sha256": "adef0cb7fc160b630555dd56e86a422f2a25368fa1e67c8ebcf6d84cb59742f8"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/sim_calibration_label_noise.csv",
+      "exists": true,
+      "size_bytes": 94958,
+      "sha256": "0208181459925826476e4ada094f06ca23e24dc3aff36125db9c19452cf975ca"
+    },
+    {
+      "path": "results/sim_calibration_label_noise_summary.csv",
+      "exists": true,
+      "size_bytes": 2755,
+      "sha256": "2e841cd86d86f3d058647d00049e6ca001f9572fbac6f7413b783bed4ad01bc5"
+    }
+  ],
+  "notes": "Few-sample calibration robustness under noisy reference weighing labels."
+}

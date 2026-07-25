@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-06-28T22:47:25.838581+00:00",
+  "script": "F:\\2026\\X-RAY\\experiments\\analyze_triggered_recalibration.py",
+  "argv": [
+    "experiments\\analyze_triggered_recalibration.py"
+  ],
+  "args": {
+    "target_input": "data/simulated/xray_belt_transfer_target.csv",
+    "pretrained_checkpoint": "models/pgt_sc_tcn_pretrained.pt",
+    "base_model": "models/pgt_sc_base_model.pkl",
+    "output": "results/sim_triggered_recalibration.csv",
+    "summary": "results/sim_triggered_recalibration_summary.csv",
+    "initial_budget": 20,
+    "extra_budgets": "5,10,20",
+    "adapt_fraction": 0.2,
+    "trigger_fraction": 0.55,
+    "min_pred_flow": 5.0,
+    "random_seeds": "1,7,11,23,37",
+    "batch_size": 256,
+    "threads": 8,
+    "device": "cpu",
+    "seed": 31,
+    "elapsed_s": 154.51923740000348,
+    "seq_len": 60
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "6880e2f3ebc43fa7c4690813cdeab7f58794d62f",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "data/simulated/xray_belt_transfer_target.csv",
+      "exists": true,
+      "size_bytes": 16607409,
+      "sha256": "b0fe05883a3f13808c4f2171e8ca8d3b8f9cedf11facc847139d6756aec448ac"
+    },
+    {
+      "path": "models/pgt_sc_tcn_pretrained.pt",
+      "exists": true,
+      "size_bytes": 228608,
+      "sha256": "f08ca71ad18a793846284ac68a161d961a294ac15f340c5648b4671ce1540d58"
+    },
+    {
+      "path": "models/pgt_sc_base_model.pkl",
+      "exists": true,
+      "size_bytes": 1658,
+      "sha256": "adef0cb7fc160b630555dd56e86a422f2a25368fa1e67c8ebcf6d84cb59742f8"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/sim_triggered_recalibration.csv",
+      "exists": true,
+      "size_bytes": 9727,
+      "sha256": "a91329a4d91db01c7c9aa583046bb53e64273482071b59df7cb7496af808fefd"
+    },
+    {
+      "path": "results/sim_triggered_recalibration_summary.csv",
+      "exists": true,
+      "size_bytes": 3450,
+      "sha256": "2bc38eb6a07cd7ae38ad38350254923b788b9b5c1e86f05c4b7e7e887acb5c49"
+    }
+  ],
+  "notes": "Triggered recalibration closed-loop simulation using initial prediction-stratified calibration plus extra reference labels."
+}

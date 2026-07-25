@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-06-28T21:17:53.009134+00:00",
+  "script": "F:\\2026\\X-RAY\\experiments\\generate_transfer_target_dataset.py",
+  "argv": [
+    "experiments\\generate_transfer_target_dataset.py"
+  ],
+  "args": {
+    "output": "data/simulated/xray_belt_transfer_target.csv",
+    "summary": "results/sim_transfer_target_summary.csv",
+    "sites": 8,
+    "devices_per_site": 2,
+    "installs_per_device": 2,
+    "seconds": 3600,
+    "severity": 1.0,
+    "seed": 20260627
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "63657e7f5210c83383c6254fb16beb78813efbbf",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "data/simulated/xray_belt_transfer_target.csv",
+      "exists": true,
+      "size_bytes": 16607409,
+      "sha256": "b0fe05883a3f13808c4f2171e8ca8d3b8f9cedf11facc847139d6756aec448ac"
+    },
+    {
+      "path": "results/sim_transfer_target_summary.csv",
+      "exists": true,
+      "size_bytes": 347,
+      "sha256": "ec2807dc18be94cfdfd330ad2fa9c7134f8e409aacfa00b9db9ac927f3708006"
+    }
+  ],
+  "notes": "Shifted target-domain simulation dataset for pretraining transfer validation."
+}

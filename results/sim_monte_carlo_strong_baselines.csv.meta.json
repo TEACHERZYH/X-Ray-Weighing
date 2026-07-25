@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-06-28T09:05:53.656460+00:00",
+  "script": "experiments/run_monte_carlo_strong_baselines.py",
+  "argv": [
+    "experiments/run_monte_carlo_strong_baselines.py",
+    "--output",
+    "results/sim_monte_carlo_strong_baselines.csv",
+    "--replicates",
+    "20",
+    "--seconds",
+    "1800",
+    "--sites",
+    "4",
+    "--devices-per-site",
+    "2",
+    "--installs-per-device",
+    "2",
+    "--calibrate-samples",
+    "20,60,180",
+    "--hgb-max-iter",
+    "180",
+    "--rf-estimators",
+    "80"
+  ],
+  "args": {
+    "output": "results/sim_monte_carlo_strong_baselines.csv",
+    "replicates": 20,
+    "seconds": 1800,
+    "sites": 4,
+    "devices_per_site": 2,
+    "installs_per_device": 2,
+    "seed": 20260628,
+    "calibrate_samples": "20,60,180",
+    "hgb_max_iter": 180,
+    "rf_estimators": 80
+  },
+  "python": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "4b3dea1395166dd350944347140a6d2b7992260d",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "results/sim_monte_carlo_strong_baselines.csv",
+      "exists": true,
+      "size_bytes": 96181,
+      "sha256": "8fa77e646e917eaeea25cec5f847816a2aaf0a7395a140d7b32533f5ab0d01db"
+    }
+  ],
+  "notes": "Monte Carlo leave-one-site evaluation against nonlinear HGB and random-forest baselines."
+}

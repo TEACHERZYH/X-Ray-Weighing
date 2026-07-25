@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-06-28T06:33:30.021467+00:00",
+  "script": "experiments/run_tcn_sensitivity.py",
+  "argv": [
+    "experiments/run_tcn_sensitivity.py",
+    "--input",
+    "data/simulated/xray_belt_sim.csv",
+    "--output",
+    "results/sim_tcn_sensitivity.csv",
+    "--epochs",
+    "12",
+    "--batch-size",
+    "256",
+    "--device",
+    "cuda",
+    "--threads",
+    "8"
+  ],
+  "args": {
+    "input": "data/simulated/xray_belt_sim.csv",
+    "output": "results/sim_tcn_sensitivity.csv",
+    "configs": "30:24:3,60:24:3,60:48:4,120:48:4,60:64:4,120:64:5",
+    "calibrate_samples": "20,60,180",
+    "epochs": 12,
+    "batch_size": 256,
+    "train_stride": 3,
+    "threads": 8,
+    "num_workers": 0,
+    "device": "cuda",
+    "seed": 7,
+    "max_rows_per_group": 0
+  },
+  "python": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "2c954fa",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "data/simulated/xray_belt_sim.csv",
+      "exists": true,
+      "size_bytes": 8267676,
+      "sha256": "96cae47765ce67b0415601c80c75899339310ede1592da802faf00c766ce39a3"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/sim_tcn_sensitivity.csv",
+      "exists": true,
+      "size_bytes": 4542,
+      "sha256": "2f55bff1be6755493ca13a595f242dc75446638cf15b443cea3257a17120b01c"
+    }
+  ],
+  "notes": "TCN sequence length, channel count, and depth sensitivity experiment for simulated cross-site PG-TSC validation."
+}

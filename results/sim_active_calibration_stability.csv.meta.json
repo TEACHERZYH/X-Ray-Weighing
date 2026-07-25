@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-06-27T21:14:56.195464+00:00",
+  "script": "experiments/analyze_active_calibration_stability.py",
+  "argv": [
+    "experiments\\analyze_active_calibration_stability.py"
+  ],
+  "args": {
+    "input": "results/sim_active_calibration_results.csv",
+    "output": "results/sim_active_calibration_stability.csv"
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "95954f3914e707724d5a24e8b37d85fcba933c67",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "results\\sim_active_calibration_results.csv",
+      "exists": true,
+      "size_bytes": 3571,
+      "sha256": "e121896bc051d6bce8f6fd6318739b6c5e757c76a68a946f23939cf125d01c40"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results\\sim_active_calibration_stability.csv",
+      "exists": true,
+      "size_bytes": 1013,
+      "sha256": "6a85bc1ba61c4549206c1f301875ec3a58e1c25b62013fe99a03510af246ece0"
+    }
+  ],
+  "notes": "Post-hoc stability summary for active calibration sampling using existing multi-seed random baseline."
+}

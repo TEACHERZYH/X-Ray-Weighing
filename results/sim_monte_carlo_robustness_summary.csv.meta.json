@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-06-28T08:24:09.639067+00:00",
+  "script": "experiments/analyze_monte_carlo_robustness.py",
+  "argv": [
+    "experiments\\analyze_monte_carlo_robustness.py"
+  ],
+  "args": {
+    "input": "results/sim_monte_carlo_robustness.csv",
+    "summary": "results/sim_monte_carlo_robustness_summary.csv",
+    "out_base": "paper/figures/fig11_monte_carlo_robustness"
+  },
+  "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "61909cec5ad0d10eade76a695620cc1053979b26",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "M paper/figures/fig11_monte_carlo_robustness.pdf",
+      " M paper/figures/fig11_monte_carlo_robustness.svg"
+    ],
+    "status_short_all": [
+      "M paper/figures/fig11_monte_carlo_robustness.pdf",
+      " M paper/figures/fig11_monte_carlo_robustness.svg"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "results/sim_monte_carlo_robustness.csv",
+      "exists": true,
+      "size_bytes": 142818,
+      "sha256": "6956680c21ee1e5aca137def7828a20c5045ec8a7c0268d9bd8c6a2121233fd4"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/sim_monte_carlo_robustness_summary.csv",
+      "exists": true,
+      "size_bytes": 2005,
+      "sha256": "6ef844c84fc7997d0907477b052b4ab1b8a7aa1e0f07e1a6cfa51a03717f6784"
+    },
+    {
+      "path": "paper/figures/fig11_monte_carlo_robustness.svg",
+      "exists": true,
+      "size_bytes": 133965,
+      "sha256": "83722508fca3f62fccdef263be33929883085db656eab5bfabe326d9d8d8bb3c"
+    },
+    {
+      "path": "paper/figures/fig11_monte_carlo_robustness.png",
+      "exists": true,
+      "size_bytes": 459964,
+      "sha256": "f766d57749ef35ec1adea69d657f837f5336ff046a578bcb76e77e17cdd0818e"
+    },
+    {
+      "path": "paper/figures/fig11_monte_carlo_robustness.pdf",
+      "exists": true,
+      "size_bytes": 59652,
+      "sha256": "dfa89e4491565071580560389b649d19f91928af884d10228b9f1860c24ca0b3"
+    }
+  ],
+  "notes": "Summary and publication figure for Monte Carlo leave-one-site robustness experiment."
+}

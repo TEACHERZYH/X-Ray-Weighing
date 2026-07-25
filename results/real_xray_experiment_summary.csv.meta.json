@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-07-02T16:07:09.844246+00:00",
+  "script": "/data/zyh/projects/X-RAY/experiments/run_real_xray_experiments.py",
+  "argv": [
+    "experiments/run_real_xray_experiments.py"
+  ],
+  "args": {
+    "input": "/data/zyh/projects/X-RAY/data/real/real_xray_belt_clean_qc.csv",
+    "summary": "/data/zyh/projects/X-RAY/results/real_xray_experiment_summary.csv",
+    "calibration": "/data/zyh/projects/X-RAY/results/real_xray_calibration_strategy.csv",
+    "stratified": "/data/zyh/projects/X-RAY/results/real_xray_stratified_errors.csv",
+    "install_errors": "/data/zyh/projects/X-RAY/results/real_xray_install_errors.csv",
+    "qc_holdout": "/data/zyh/projects/X-RAY/results/real_xray_qc_holdout_errors.csv",
+    "seed": 20260702,
+    "calibration_fraction": 0.3,
+    "mass_anchor_bound_pct": 15.0,
+    "max_rows": 0,
+    "quick": false
+  },
+  "python": "3.10.6 | packaged by conda-forge | (main, Aug 22 2022, 20:36:39) [GCC 10.4.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "",
+    "branch": "",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "data/real/real_xray_belt_clean_qc.csv",
+      "exists": true,
+      "size_bytes": 5161427,
+      "sha256": "a95160bfcc3962f9a5c6c1330b5f5714e769a7b33b2fac86722cf44b33d7e1f4"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/real_xray_experiment_summary.csv",
+      "exists": true,
+      "size_bytes": 4547,
+      "sha256": "a246c9987a7dd71d56e946d7e8b5b8c5ff1e74f8cb113169f51676b0d482bec9"
+    }
+  ],
+  "notes": "Real X-ray belt data experiment output. Main split trains on S01-S03 and evaluates S04-S05 with per-install few-shot calibration."
+}

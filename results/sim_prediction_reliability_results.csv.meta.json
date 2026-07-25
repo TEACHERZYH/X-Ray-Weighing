@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-06-26T04:44:50.377511+00:00",
+  "script": "experiments/analyze_prediction_reliability.py",
+  "argv": [
+    "experiments/analyze_prediction_reliability.py",
+    "--target-input",
+    "/data/zyh/datasets/xray-mass-consistency-e91b0f2/xray_belt_transfer_target.csv",
+    "--pretrained-checkpoint",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+    "--base-model",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+    "--output",
+    "/data/zyh/projects/xray-prediction-reliability-b08beb2/results/sim_prediction_reliability_results.csv",
+    "--budgets",
+    "20,60,180",
+    "--strategies",
+    "time-uniform,prediction-stratified",
+    "--interval-methods",
+    "global,install,flow-bin",
+    "--nominal-coverages",
+    "0.80,0.90,0.95",
+    "--batch-size",
+    "256",
+    "--threads",
+    "8"
+  ],
+  "args": {
+    "target_input": "/data/zyh/datasets/xray-mass-consistency-e91b0f2/xray_belt_transfer_target.csv",
+    "pretrained_checkpoint": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+    "base_model": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+    "output": "/data/zyh/projects/xray-prediction-reliability-b08beb2/results/sim_prediction_reliability_results.csv",
+    "adapt_fraction": 0.2,
+    "budgets": "20,60,180",
+    "strategies": "time-uniform,prediction-stratified",
+    "interval_methods": "global,install,flow-bin",
+    "nominal_coverages": "0.80,0.90,0.95",
+    "min_pred_flow": 5.0,
+    "flow_bins": 4,
+    "drift_quantile": 0.95,
+    "risk_quantile": 0.9,
+    "batch_size": 256,
+    "threads": 8,
+    "device": "auto",
+    "seed": 23
+  },
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "b08beb2",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "/data/zyh/datasets/xray-mass-consistency-e91b0f2/xray_belt_transfer_target.csv",
+      "exists": true,
+      "size_bytes": 16607409,
+      "sha256": "b0fe05883a3f13808c4f2171e8ca8d3b8f9cedf11facc847139d6756aec448ac"
+    },
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+      "exists": true,
+      "size_bytes": 228608,
+      "sha256": "f08ca71ad18a793846284ac68a161d961a294ac15f340c5648b4671ce1540d58"
+    },
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+      "exists": true,
+      "size_bytes": 1658,
+      "sha256": "adef0cb7fc160b630555dd56e86a422f2a25368fa1e67c8ebcf6d84cb59742f8"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/data/zyh/projects/xray-prediction-reliability-b08beb2/results/sim_prediction_reliability_results.csv",
+      "exists": true,
+      "size_bytes": 29880,
+      "sha256": "34a08c428b472146ac87a24431db1eaa1ba1b347332056be95fc6713393a7190"
+    }
+  ],
+  "notes": "Prediction interval calibration and high-risk recalibration trigger simulation."
+}

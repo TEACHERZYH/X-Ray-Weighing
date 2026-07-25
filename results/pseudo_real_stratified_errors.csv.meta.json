@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-06-29T00:43:55.386658+00:00",
+  "script": "F:\\2026\\X-RAY\\experiments\\run_pseudo_real_experiments.py",
+  "argv": [
+    "experiments\\run_pseudo_real_experiments.py",
+    "--input",
+    "data\\real_like\\pseudo_real_xray_belt.csv",
+    "--summary",
+    "results\\pseudo_real_experiment_summary.csv",
+    "--calibration",
+    "results\\pseudo_real_calibration_strategy.csv",
+    "--stratified",
+    "results\\pseudo_real_stratified_errors.csv",
+    "--install-errors",
+    "results\\pseudo_real_install_errors.csv"
+  ],
+  "args": {
+    "input": "data\\real_like\\pseudo_real_xray_belt.csv",
+    "summary": "results\\pseudo_real_experiment_summary.csv",
+    "calibration": "results\\pseudo_real_calibration_strategy.csv",
+    "stratified": "results\\pseudo_real_stratified_errors.csv",
+    "install_errors": "results\\pseudo_real_install_errors.csv",
+    "seed": 20260629,
+    "calibration_fraction": 0.3
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "5475aa7514aacc59a8820371ad4f48f796d2741d",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "?? results/pseudo_real_calibration_strategy.csv",
+      "?? results/pseudo_real_calibration_strategy.csv.meta.json",
+      "?? results/pseudo_real_experiment_summary.csv",
+      "?? results/pseudo_real_experiment_summary.csv.meta.json",
+      "?? results/pseudo_real_install_errors.csv",
+      "?? results/pseudo_real_stratified_errors.csv"
+    ],
+    "status_short_all": [
+      "?? results/pseudo_real_calibration_strategy.csv",
+      "?? results/pseudo_real_calibration_strategy.csv.meta.json",
+      "?? results/pseudo_real_experiment_summary.csv",
+      "?? results/pseudo_real_experiment_summary.csv.meta.json",
+      "?? results/pseudo_real_install_errors.csv",
+      "?? results/pseudo_real_stratified_errors.csv"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "data/real_like/pseudo_real_xray_belt.csv",
+      "exists": true,
+      "size_bytes": 4492070,
+      "sha256": "b321991a4d0b516d5016583c0caa41fb281329b2493daa597047c4ba735d64b6"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/pseudo_real_stratified_errors.csv",
+      "exists": true,
+      "size_bytes": 2770,
+      "sha256": "dfdb90ff8dfa66b09cf7b81579f29cb2f338ed5509cb7e55d975c4e77e40a642"
+    }
+  ],
+  "notes": "Pseudo-real local experiment output. Not field evidence."
+}

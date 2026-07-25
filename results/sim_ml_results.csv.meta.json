@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-06-22T19:11:29.771446+00:00",
+  "script": "F:\\2026\\X-RAY\\experiments\\run_sim_ml.py",
+  "argv": [
+    "experiments\\run_sim_ml.py"
+  ],
+  "args": {
+    "input": "data/simulated/xray_belt_sim.csv",
+    "output": "results/sim_ml_results.csv"
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "058a88a4871507a0d173c15d808d2313a178c38d",
+    "branch": "master",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "M paper/figures/fig5_calibration_curve.png",
+      " M paper/figures/fig5_calibration_curve.svg",
+      " M paper/figures/fig6_drift_curve.svg",
+      " M results/sim_calibration_curve.csv",
+      " M results/sim_ml_results.csv",
+      " M results/sim_tcn_results.csv",
+      "?? paper/figures/fig6_drift_curve.svg.meta.json",
+      "?? results/sim_baselines.csv.meta.json",
+      "?? results/sim_calibration_curve.csv.meta.json",
+      "?? results/sim_install_errors.csv.meta.json",
+      "?? results/sim_ml_results.csv.meta.json",
+      "?? results/sim_stratified_errors.csv.meta.json",
+      "?? results/sim_tcn_results.csv.meta.json"
+    ],
+    "status_short_all": [
+      "M paper/figures/fig5_calibration_curve.png",
+      " M paper/figures/fig5_calibration_curve.svg",
+      " M paper/figures/fig6_drift_curve.svg",
+      " M results/sim_calibration_curve.csv",
+      " M results/sim_ml_results.csv",
+      " M results/sim_tcn_results.csv",
+      "?? paper/figures/fig6_drift_curve.svg.meta.json",
+      "?? results/sim_baselines.csv.meta.json",
+      "?? results/sim_calibration_curve.csv.meta.json",
+      "?? results/sim_install_errors.csv.meta.json",
+      "?? results/sim_ml_results.csv.meta.json",
+      "?? results/sim_stratified_errors.csv.meta.json",
+      "?? results/sim_tcn_results.csv.meta.json"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "data\\simulated\\xray_belt_sim.csv",
+      "exists": true,
+      "size_bytes": 8267676,
+      "sha256": "96cae47765ce67b0415601c80c75899339310ede1592da802faf00c766ce39a3"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results\\sim_ml_results.csv",
+      "exists": true,
+      "size_bytes": 1042,
+      "sha256": "6839ba2e1a55e2a860e4eafbe807c27b9fedd7687b954baf4d29ddc934d5580c"
+    },
+    {
+      "path": "results\\sim_predictions.csv",
+      "exists": true,
+      "size_bytes": 1455375,
+      "sha256": "b70febbe57dd033c909acb980e4d58be9d9b62eeaa547f0026a16ff446d28342"
+    }
+  ],
+  "notes": "Scikit-learn residual models and prediction table for downstream stratified/install analyses."
+}

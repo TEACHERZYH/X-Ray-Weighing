@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-06-28T03:59:28.765307+00:00",
+  "script": "experiments/analyze_cross_install_uncertainty.py",
+  "argv": [
+    "experiments\\analyze_cross_install_uncertainty.py"
+  ],
+  "args": {
+    "predictions": "results/sim_predictions.csv",
+    "out": "results/sim_cross_install_uncertainty.csv",
+    "n_boot": 10000,
+    "seed": 20260628
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "1ea663f364116ca30252b755ef1a51743ebc1011",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "?? results/sim_cross_install_uncertainty.csv",
+      "?? results/sim_cross_install_uncertainty.csv.meta.json"
+    ],
+    "status_short_all": [
+      "?? results/sim_cross_install_uncertainty.csv",
+      "?? results/sim_cross_install_uncertainty.csv.meta.json"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "results/sim_predictions.csv",
+      "exists": true,
+      "size_bytes": 1455375,
+      "sha256": "b70febbe57dd033c909acb980e4d58be9d9b62eeaa547f0026a16ff446d28342"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/sim_cross_install_uncertainty.csv",
+      "exists": true,
+      "size_bytes": 1714,
+      "sha256": "4caf56333f972352e7f92e7d4dc37857cc29b6b6380945682306cc6ae50baee9"
+    }
+  ],
+  "notes": "Cross-install bootstrap uncertainty analysis from existing point predictions; no model retraining."
+}

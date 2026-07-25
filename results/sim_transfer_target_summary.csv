@@ -1,0 +1,2 @@
+dataset,rows,sites,devices_per_site,installs_per_device,seconds_per_install,install_count,severity,total_mass_kg,empty_ratio,ash_missing_ratio,seed,coal_anthracite,coal_bituminous_A,coal_bituminous_B,coal_lignite
+simulated/xray_belt_transfer_target.csv,115200,8,2,2,3600,32,1.0,21263895.722753,0.125425,0.400243,20260627,28800,14400,32400,39600

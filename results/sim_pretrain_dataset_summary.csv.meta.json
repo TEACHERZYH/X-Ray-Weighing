@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-06-25T23:20:28.705451+00:00",
+  "script": "/data/zyh/projects/xray-sim-pretrain-184f78e/experiments/generate_large_sim_dataset.py",
+  "argv": [
+    "experiments/generate_large_sim_dataset.py",
+    "--output",
+    "/data/zyh/datasets/xray-sim-pretrain-184f78e/xray_belt_pretrain_large.csv",
+    "--summary",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/results/sim_pretrain_dataset_summary.csv",
+    "--sites",
+    "24",
+    "--devices-per-site",
+    "3",
+    "--installs-per-device",
+    "3",
+    "--seconds",
+    "7200",
+    "--seed",
+    "20260626"
+  ],
+  "args": {
+    "output": "/data/zyh/datasets/xray-sim-pretrain-184f78e/xray_belt_pretrain_large.csv",
+    "summary": "/data/zyh/projects/xray-sim-pretrain-184f78e/results/sim_pretrain_dataset_summary.csv",
+    "sites": 24,
+    "devices_per_site": 3,
+    "installs_per_device": 3,
+    "seconds": 7200,
+    "seed": 20260626
+  },
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "184f78e",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "/data/zyh/datasets/xray-sim-pretrain-184f78e/xray_belt_pretrain_large.csv",
+      "exists": true,
+      "size_bytes": 226035234,
+      "sha256": "891c46e915a10d2d8d359ec1940e4a4efe8674d1146efcbd09d552dc38477c43"
+    },
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/results/sim_pretrain_dataset_summary.csv",
+      "exists": true,
+      "size_bytes": 375,
+      "sha256": "8b2ad08fd4d5c55bc662a93fd360d0c4eddb08632469d8fc9f5de35f1166561c"
+    }
+  ],
+  "notes": "Large streamed simulation dataset for simulation-pretrained PG-TSC."
+}

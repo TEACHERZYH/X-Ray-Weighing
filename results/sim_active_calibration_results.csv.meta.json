@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-06-26T01:47:12.673493+00:00",
+  "script": "/data/zyh/projects/xray-active-calibration-581cd37/experiments/analyze_active_calibration.py",
+  "argv": [
+    "experiments/analyze_active_calibration.py",
+    "--target-input",
+    "/data/zyh/datasets/xray-mass-consistency-e91b0f2/xray_belt_transfer_target.csv",
+    "--pretrained-checkpoint",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+    "--base-model",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+    "--output",
+    "/data/zyh/projects/xray-active-calibration-581cd37/results/sim_active_calibration_results.csv",
+    "--budgets",
+    "10,20,60,180",
+    "--random-seeds",
+    "1,7,11,23,37",
+    "--batch-size",
+    "256",
+    "--threads",
+    "8"
+  ],
+  "args": {
+    "target_input": "/data/zyh/datasets/xray-mass-consistency-e91b0f2/xray_belt_transfer_target.csv",
+    "pretrained_checkpoint": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+    "base_model": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+    "output": "/data/zyh/projects/xray-active-calibration-581cd37/results/sim_active_calibration_results.csv",
+    "adapt_fraction": 0.2,
+    "budgets": "10,20,60,180",
+    "min_pred_flow": 5.0,
+    "random_seeds": "1,7,11,23,37",
+    "batch_size": 256,
+    "threads": 8,
+    "device": "auto",
+    "seed": 13
+  },
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "581cd37",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "/data/zyh/datasets/xray-mass-consistency-e91b0f2/xray_belt_transfer_target.csv",
+      "exists": true,
+      "size_bytes": 16607409,
+      "sha256": "b0fe05883a3f13808c4f2171e8ca8d3b8f9cedf11facc847139d6756aec448ac"
+    },
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+      "exists": true,
+      "size_bytes": 228608,
+      "sha256": "f08ca71ad18a793846284ac68a161d961a294ac15f340c5648b4671ce1540d58"
+    },
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+      "exists": true,
+      "size_bytes": 1658,
+      "sha256": "adef0cb7fc160b630555dd56e86a422f2a25368fa1e67c8ebcf6d84cb59742f8"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/data/zyh/projects/xray-active-calibration-581cd37/results/sim_active_calibration_results.csv",
+      "exists": true,
+      "size_bytes": 3571,
+      "sha256": "e121896bc051d6bce8f6fd6318739b6c5e757c76a68a946f23939cf125d01c40"
+    }
+  ],
+  "notes": "Active calibration sample selection for target-domain transfer simulation."
+}

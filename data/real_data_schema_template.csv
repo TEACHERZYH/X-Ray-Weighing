@@ -1,0 +1,2 @@
+timestamp_s,site_id,device_id,install_id,rx_value,tube_voltage_kv,tube_current_ma,source_temp_c,env_temp_c,env_humidity_pct,belt_speed_mps,empty_flag,coal_type,ash_pct,ash_missing,true_loading_kgpm,true_flow_kgps,true_cum_mass_kg
+0,SITE_A,XRAY_01,INSTALL_01,125000,80.0,1.20,35.0,24.0,55.0,2.50,1,bituminous_A,12.0,0,0.0,0.0,0.0

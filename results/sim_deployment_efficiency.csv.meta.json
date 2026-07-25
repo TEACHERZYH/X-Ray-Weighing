@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-06-27T22:15:31.755669+00:00",
+  "script": "experiments/analyze_deployment_efficiency.py",
+  "argv": [
+    "experiments\\analyze_deployment_efficiency.py"
+  ],
+  "args": {
+    "output": "results/sim_deployment_efficiency.csv",
+    "seq_len": 60,
+    "threads": 1,
+    "warmup": 30,
+    "repeats": 120,
+    "batches": "1,32,256",
+    "seed": 20260628
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "595731be4c028650ee6a44360e4f27367a379a9a",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "?? results/sim_deployment_efficiency.csv"
+    ],
+    "status_short_all": [
+      "?? results/sim_deployment_efficiency.csv"
+    ]
+  },
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "results\\sim_deployment_efficiency.csv",
+      "exists": true,
+      "size_bytes": 1163,
+      "sha256": "5d4dc2aa3bea361acad78f289f4a6c1ebcd8261126d6289b2a4b0891880810b5"
+    }
+  ],
+  "notes": "Module-level CPU inference benchmark for PG-TSC TCN deployment feasibility using synthetic online inputs."
+}

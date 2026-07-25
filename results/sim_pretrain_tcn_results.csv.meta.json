@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-06-25T23:31:00.643947+00:00",
+  "script": "/data/zyh/projects/xray-sim-pretrain-184f78e/experiments/run_pretrain_tcn.py",
+  "argv": [
+    "experiments/run_pretrain_tcn.py",
+    "--input",
+    "/data/zyh/datasets/xray-sim-pretrain-184f78e/xray_belt_pretrain_large.csv",
+    "--output",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/results/sim_pretrain_tcn_results.csv",
+    "--checkpoint",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+    "--base-model",
+    "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+    "--seq-len",
+    "60",
+    "--epochs",
+    "16",
+    "--batch-size",
+    "512",
+    "--channels",
+    "48",
+    "--levels",
+    "4",
+    "--train-stride",
+    "4",
+    "--holdout-site-count",
+    "4",
+    "--threads",
+    "8"
+  ],
+  "args": {
+    "input": "/data/zyh/datasets/xray-sim-pretrain-184f78e/xray_belt_pretrain_large.csv",
+    "output": "/data/zyh/projects/xray-sim-pretrain-184f78e/results/sim_pretrain_tcn_results.csv",
+    "checkpoint": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+    "base_model": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+    "seq_len": 60,
+    "epochs": 16,
+    "batch_size": 512,
+    "channels": 48,
+    "levels": 4,
+    "dropout": 0.05,
+    "train_stride": 4,
+    "holdout_site_count": 4,
+    "holdout_sites": "",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "threads": 8,
+    "num_workers": 0,
+    "device": "auto",
+    "seed": 7
+  },
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "184f78e",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "/data/zyh/datasets/xray-sim-pretrain-184f78e/xray_belt_pretrain_large.csv",
+      "exists": true,
+      "size_bytes": 226035234,
+      "sha256": "891c46e915a10d2d8d359ec1940e4a4efe8674d1146efcbd09d552dc38477c43"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/results/sim_pretrain_tcn_results.csv",
+      "exists": true,
+      "size_bytes": 1332,
+      "sha256": "789096609085873b36a2f67730e39b51d38384448e82f992edd2728fe6602112"
+    },
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_tcn_pretrained.pt",
+      "exists": true,
+      "size_bytes": 228608,
+      "sha256": "f08ca71ad18a793846284ac68a161d961a294ac15f340c5648b4671ce1540d58"
+    },
+    {
+      "path": "/data/zyh/projects/xray-sim-pretrain-184f78e/models/pgt_sc_base_model.pkl",
+      "exists": true,
+      "size_bytes": 1658,
+      "sha256": "adef0cb7fc160b630555dd56e86a422f2a25368fa1e67c8ebcf6d84cb59742f8"
+    }
+  ],
+  "notes": "Large-simulation pretraining run for PG-TSC TCN residual model."
+}

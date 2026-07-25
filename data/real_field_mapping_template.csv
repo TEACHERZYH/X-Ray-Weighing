@@ -1,0 +1,19 @@
+canonical_column,source_column,required_for_paper,unit_or_type,transform_note
+timestamp_s,timestamp_s,yes,s,convert device time to seconds from run start if needed
+site_id,site_id,yes,text,anonymize site name if needed
+device_id,device_id,yes,text,anonymize xray device serial if needed
+install_id,install_id,yes,text,identify each installation or calibration setup
+rx_value,rx_value,yes,count/vendor unit,receiver radiation value from serial output
+tube_voltage_kv,tube_voltage_kv,yes,kV,tube voltage from xray device
+tube_current_ma,tube_current_ma,yes,mA,tube current from xray device
+source_temp_c,source_temp_c,yes,degC,source or device temperature
+env_temp_c,env_temp_c,yes,degC,environment temperature
+env_humidity_pct,env_humidity_pct,yes,%,environment relative humidity
+belt_speed_mps,belt_speed_mps,yes,m/s,belt speed after time alignment
+empty_flag,empty_flag,no,0/1,blank source allowed if inferred later
+coal_type,coal_type,yes,text,coal type or coal source category
+ash_pct,ash_pct,no,%,blank allowed when ash_missing=1
+ash_missing,ash_missing,yes,0/1,1 when ash_pct is unavailable or filled by estimate
+true_loading_kgpm,true_loading_kgpm,no,kg/m,can be derived from true_flow_kgps and belt_speed_mps
+true_flow_kgps,true_flow_kgps,yes,kg/s,label from reference scale or converted segment mass
+true_cum_mass_kg,true_cum_mass_kg,no,kg,cumulative label if available

@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-06-28T12:16:17.649554+00:00",
+  "script": "experiments/analyze_simulator_mismatch_boundary.py",
+  "argv": [
+    "experiments/analyze_simulator_mismatch_boundary.py",
+    "--input",
+    "results/sim_simulator_mismatch_boundary.csv",
+    "--summary",
+    "results/sim_simulator_mismatch_boundary_summary.csv",
+    "--out-base",
+    "paper/figures/fig13_simulator_mismatch_boundary"
+  ],
+  "args": {
+    "input": "results/sim_simulator_mismatch_boundary.csv",
+    "summary": "results/sim_simulator_mismatch_boundary_summary.csv",
+    "out_base": "paper/figures/fig13_simulator_mismatch_boundary"
+  },
+  "python": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "b0310fe",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "results/sim_simulator_mismatch_boundary.csv",
+      "exists": true,
+      "size_bytes": 336470,
+      "sha256": "6a972a8f49a166ac2d48295aa783dab5cb07cc042258e382f54c9248e3f3b734"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/sim_simulator_mismatch_boundary_summary.csv",
+      "exists": true,
+      "size_bytes": 3568,
+      "sha256": "af8d051da07072bc60f2b8d6187688fb37cebf97bdafbf470e66607f6b975978"
+    },
+    {
+      "path": "paper/figures/fig13_simulator_mismatch_boundary.svg",
+      "exists": true,
+      "size_bytes": 43106,
+      "sha256": "ab580681565495de85b3971b5c984de8e8f5a8571d5d00b6376c4935eb016909"
+    },
+    {
+      "path": "paper/figures/fig13_simulator_mismatch_boundary.png",
+      "exists": true,
+      "size_bytes": 443757,
+      "sha256": "b7134645033d8874fb0b9a6147922303126f82a0bc3430406cd53c9e38368b81"
+    },
+    {
+      "path": "paper/figures/fig13_simulator_mismatch_boundary.pdf",
+      "exists": true,
+      "size_bytes": 24246,
+      "sha256": "21cd31188c3774c56cc9f85b473ed9f4789347d8297cbf137cbded25b89c8a5d"
+    },
+    {
+      "path": "paper/figures/fig13_simulator_mismatch_boundary.tiff",
+      "exists": true,
+      "size_bytes": 45979370,
+      "sha256": "88777f8687b6755743a85c37563d8e6f4cb8a48d409ea3d7f86ec876136fce4a"
+    }
+  ],
+  "notes": "Summary and publication figure for simulator-mismatch boundary experiment."
+}

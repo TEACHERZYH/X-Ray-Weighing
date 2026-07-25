@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-06-28T10:19:30.076414+00:00",
+  "script": "experiments/analyze_monte_carlo_strong_baselines.py",
+  "argv": [
+    "experiments\\analyze_monte_carlo_strong_baselines.py",
+    "--input",
+    "results\\sim_monte_carlo_strong_baselines.csv",
+    "--summary",
+    "results\\sim_monte_carlo_strong_baselines_summary.csv",
+    "--out-base",
+    "paper\\figures\\fig12_strong_baseline_robustness"
+  ],
+  "args": {
+    "input": "results\\sim_monte_carlo_strong_baselines.csv",
+    "summary": "results\\sim_monte_carlo_strong_baselines_summary.csv",
+    "out_base": "paper\\figures\\fig12_strong_baseline_robustness"
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "1f4f7fd980c44ff235bc67bc6e9c8ebb5bcc6776",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "M paper/figures/fig12_strong_baseline_robustness.pdf",
+      " M paper/figures/fig12_strong_baseline_robustness.svg"
+    ],
+    "status_short_all": [
+      "M paper/figures/fig12_strong_baseline_robustness.pdf",
+      " M paper/figures/fig12_strong_baseline_robustness.svg"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "results/sim_monte_carlo_strong_baselines.csv",
+      "exists": true,
+      "size_bytes": 96181,
+      "sha256": "8fa77e646e917eaeea25cec5f847816a2aaf0a7395a140d7b32533f5ab0d01db"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/sim_monte_carlo_strong_baselines_summary.csv",
+      "exists": true,
+      "size_bytes": 1855,
+      "sha256": "bfbfcfcdbc1bfa68dcccbad0330ea5dde3ad37c331556196db402898d96964bf"
+    },
+    {
+      "path": "paper/figures/fig12_strong_baseline_robustness.svg",
+      "exists": true,
+      "size_bytes": 105222,
+      "sha256": "02e6cfaedd19000bb6bc1343c6b79e4b38359ef4464d96dfe20112c902a4f8a8"
+    },
+    {
+      "path": "paper/figures/fig12_strong_baseline_robustness.png",
+      "exists": true,
+      "size_bytes": 417774,
+      "sha256": "1ce37a32acab51f47a84e91f0da7a48e9e1d51533f6c73929fa6d5f3d06deea6"
+    },
+    {
+      "path": "paper/figures/fig12_strong_baseline_robustness.pdf",
+      "exists": true,
+      "size_bytes": 56718,
+      "sha256": "c4fbeb0242a5e791edba79fc67c42e1bbc0f087c8c402be15a0355b3bdcadc4c"
+    },
+    {
+      "path": "paper/figures/fig12_strong_baseline_robustness.tiff",
+      "exists": true,
+      "size_bytes": 44926010,
+      "sha256": "9a19ba4d1fc3729d58ab60a5b7208da36d764b6a4ebaaf1f50531330e34116ee"
+    }
+  ],
+  "notes": "Summary and publication figure for strong-baseline Monte Carlo robustness experiment."
+}

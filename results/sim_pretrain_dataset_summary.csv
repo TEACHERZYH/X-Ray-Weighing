@@ -1,0 +1,2 @@
+dataset,rows,sites,devices_per_site,installs_per_device,seconds_per_install,install_count,total_mass_kg,empty_ratio,ash_missing_ratio,seed,coal_anthracite,coal_bituminous_A,coal_bituminous_B,coal_lignite
+xray-sim-pretrain-184f78e/xray_belt_pretrain_large.csv,1555200,24,3,3,7200,216,299516827.208408,0.119421,0.39751,20260626,453600,324000,410400,367200

@@ -1,0 +1,142 @@
+{
+  "created_utc": "2026-07-03T12:36:35.914134+00:00",
+  "script": "experiments/analyze_tcn_sensitivity.py",
+  "argv": [
+    "experiments/analyze_tcn_sensitivity.py"
+  ],
+  "args": {
+    "input": "results/sim_tcn_sensitivity.csv",
+    "summary": "results/sim_tcn_sensitivity_summary.csv",
+    "out_base": "paper/figures/fig10_tcn_sensitivity"
+  },
+  "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "116045f1c85afe639b80d42431d67a5ce5dcd04b",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": true,
+    "status_short": [
+      "M experiments/analyze_sim_deployment_readiness.py",
+      " M experiments/analyze_sim_install_drift.py",
+      " M experiments/analyze_sim_robustness.py",
+      " M experiments/analyze_sim_stress_tests.py",
+      " M experiments/analyze_tcn_sensitivity.py",
+      " M experiments/plot_method_diagrams.py",
+      " M experiments/plot_real_xray_experiments.py",
+      " M experiments/plot_sim_data_profile.py",
+      " M experiments/plot_sim_results.py",
+      "?? experiments/figure_style.py",
+      "?? frontend_simulator_ui/",
+      "?? paper/figure_publication_optimization_plan.md"
+    ],
+    "generated_status_short": [
+      " M paper/figures/fig10_tcn_sensitivity.pdf",
+      " M paper/figures/fig10_tcn_sensitivity.png",
+      " M paper/figures/fig10_tcn_sensitivity.svg",
+      " M paper/figures/fig1_system_error_sources.png",
+      " M paper/figures/fig1_system_error_sources.svg",
+      " M paper/figures/fig1_system_error_sources.tiff",
+      " M paper/figures/fig2_pgtcs_framework.png",
+      " M paper/figures/fig2_pgtcs_framework.svg",
+      " M paper/figures/fig2_pgtcs_framework.tiff",
+      " M paper/figures/fig3_sim_data_profile.png",
+      " M paper/figures/fig3_sim_data_profile.svg",
+      " M paper/figures/fig3_sim_data_profile.svg.meta.json",
+      " M paper/figures/fig3_sim_data_profile.tiff",
+      " M paper/figures/fig4a_cumulative_error.png",
+      " M paper/figures/fig4a_cumulative_error.svg",
+      " M paper/figures/fig4a_cumulative_error.tiff",
+      " M paper/figures/fig4b_cumulative_curve.png",
+      " M paper/figures/fig4b_cumulative_curve.svg",
+      " M paper/figures/fig4b_cumulative_curve.tiff",
+      " M paper/figures/fig5_calibration_curve.png",
+      " M paper/figures/fig5_calibration_curve.svg",
+      " M paper/figures/fig5_calibration_curve.tiff",
+      " M paper/figures/fig6_drift_curve.png",
+      " M paper/figures/fig6_drift_curve.svg",
+      " M paper/figures/fig6_drift_curve.svg.meta.json",
+      " M paper/figures/fig6_drift_curve.tiff",
+      " M results/sim_calibration_curve.csv.meta.json",
+      " M results/sim_install_errors.csv.meta.json",
+      " M results/sim_stratified_errors.csv.meta.json"
+    ],
+    "status_short_all": [
+      "M experiments/analyze_sim_deployment_readiness.py",
+      " M experiments/analyze_sim_install_drift.py",
+      " M experiments/analyze_sim_robustness.py",
+      " M experiments/analyze_sim_stress_tests.py",
+      " M experiments/analyze_tcn_sensitivity.py",
+      " M experiments/plot_method_diagrams.py",
+      " M experiments/plot_real_xray_experiments.py",
+      " M experiments/plot_sim_data_profile.py",
+      " M experiments/plot_sim_results.py",
+      " M paper/figures/fig10_tcn_sensitivity.pdf",
+      " M paper/figures/fig10_tcn_sensitivity.png",
+      " M paper/figures/fig10_tcn_sensitivity.svg",
+      " M paper/figures/fig1_system_error_sources.png",
+      " M paper/figures/fig1_system_error_sources.svg",
+      " M paper/figures/fig1_system_error_sources.tiff",
+      " M paper/figures/fig2_pgtcs_framework.png",
+      " M paper/figures/fig2_pgtcs_framework.svg",
+      " M paper/figures/fig2_pgtcs_framework.tiff",
+      " M paper/figures/fig3_sim_data_profile.png",
+      " M paper/figures/fig3_sim_data_profile.svg",
+      " M paper/figures/fig3_sim_data_profile.svg.meta.json",
+      " M paper/figures/fig3_sim_data_profile.tiff",
+      " M paper/figures/fig4a_cumulative_error.png",
+      " M paper/figures/fig4a_cumulative_error.svg",
+      " M paper/figures/fig4a_cumulative_error.tiff",
+      " M paper/figures/fig4b_cumulative_curve.png",
+      " M paper/figures/fig4b_cumulative_curve.svg",
+      " M paper/figures/fig4b_cumulative_curve.tiff",
+      " M paper/figures/fig5_calibration_curve.png",
+      " M paper/figures/fig5_calibration_curve.svg",
+      " M paper/figures/fig5_calibration_curve.tiff",
+      " M paper/figures/fig6_drift_curve.png",
+      " M paper/figures/fig6_drift_curve.svg",
+      " M paper/figures/fig6_drift_curve.svg.meta.json",
+      " M paper/figures/fig6_drift_curve.tiff",
+      " M results/sim_calibration_curve.csv.meta.json",
+      " M results/sim_install_errors.csv.meta.json",
+      " M results/sim_stratified_errors.csv.meta.json",
+      "?? experiments/figure_style.py",
+      "?? frontend_simulator_ui/",
+      "?? paper/figure_publication_optimization_plan.md"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "results/sim_tcn_sensitivity.csv",
+      "exists": true,
+      "size_bytes": 4542,
+      "sha256": "2f55bff1be6755493ca13a595f242dc75446638cf15b443cea3257a17120b01c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/sim_tcn_sensitivity_summary.csv",
+      "exists": true,
+      "size_bytes": 1302,
+      "sha256": "f33f7e50e389fcd36a59fd20cb06830e738987092a03c9a4c13de8db38cbefbc"
+    },
+    {
+      "path": "paper/figures/fig10_tcn_sensitivity.svg",
+      "exists": true,
+      "size_bytes": 30385,
+      "sha256": "d00fb56c9c204f65f549856424b72e6ff51893ec33b5178c7607957ea0449ad7"
+    },
+    {
+      "path": "paper/figures/fig10_tcn_sensitivity.png",
+      "exists": true,
+      "size_bytes": 321075,
+      "sha256": "995760d61c9e3db91f294418367485c7f1f289444edff12183380f57ef97d4e8"
+    },
+    {
+      "path": "paper/figures/fig10_tcn_sensitivity.pdf",
+      "exists": true,
+      "size_bytes": 61918,
+      "sha256": "1723b1ee07ebb886bba78aa4f20d170b6b3a870055917ed3b6aa8d253c41674c"
+    }
+  ],
+  "notes": "Summary and figure for TCN sequence length and capacity sensitivity experiment."
+}

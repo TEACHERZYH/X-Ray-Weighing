@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-06-29T00:23:52.214538+00:00",
+  "script": "F:\\2026\\X-RAY\\experiments\\run_sim_baselines.py",
+  "argv": [
+    "experiments\\run_sim_baselines.py",
+    "--input",
+    "data\\real_like\\pseudo_real_xray_belt.csv",
+    "--output",
+    "results\\pseudo_real_baselines.csv"
+  ],
+  "args": {
+    "input": "data\\real_like\\pseudo_real_xray_belt.csv",
+    "output": "results\\pseudo_real_baselines.csv"
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "c489020d92dc4875586d2bc895f3bede7b1f899b",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "?? results/pseudo_real_baselines.csv",
+      "?? results/pseudo_real_data_profile.csv",
+      "?? results/pseudo_real_data_profile.csv.meta.json"
+    ],
+    "status_short_all": [
+      "?? results/pseudo_real_baselines.csv",
+      "?? results/pseudo_real_data_profile.csv",
+      "?? results/pseudo_real_data_profile.csv.meta.json"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "data/real_like/pseudo_real_xray_belt.csv",
+      "exists": true,
+      "size_bytes": 4492070,
+      "sha256": "b321991a4d0b516d5016583c0caa41fb281329b2493daa597047c4ba735d64b6"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/pseudo_real_baselines.csv",
+      "exists": true,
+      "size_bytes": 802,
+      "sha256": "cfa1374e0ff6609e5bc753b1db4e8c214a60f902db6082d5e70c26904993fbef"
+    }
+  ],
+  "notes": "Deterministic physics and ridge baselines for simulated cross-site validation."
+}

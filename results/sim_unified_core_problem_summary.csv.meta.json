@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-06-29T09:00:30.519190+00:00",
+  "script": "experiments/run_unified_core_problem_experiment.py",
+  "argv": [
+    "experiments\\run_unified_core_problem_experiment.py",
+    "--replicates",
+    "5",
+    "--seconds",
+    "600"
+  ],
+  "args": {
+    "output": "results/sim_unified_core_problem.csv",
+    "summary": "results/sim_unified_core_problem_summary.csv",
+    "replicates": 5,
+    "seconds": 600,
+    "sites": 4,
+    "devices_per_site": 2,
+    "installs_per_device": 2,
+    "seed": 20260629,
+    "budgets": "20,60",
+    "estimator": "ridge",
+    "hgb_max_iter": 120,
+    "mass_anchor_bound_pct": 5.0
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "63b965b46e37afe44f279952a1dcce3f997cee76",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "?? results/sim_unified_core_problem.csv",
+      "?? results/sim_unified_core_problem.csv.meta.json",
+      "?? results/sim_unified_core_problem_summary.csv"
+    ],
+    "status_short_all": [
+      "?? results/sim_unified_core_problem.csv",
+      "?? results/sim_unified_core_problem.csv.meta.json",
+      "?? results/sim_unified_core_problem_summary.csv"
+    ]
+  },
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "results/sim_unified_core_problem.csv",
+      "exists": true,
+      "size_bytes": 102129,
+      "sha256": "f864aaa9c03eb43fc18388a7f8d9421265652638681f4614b40f16610cb51b78"
+    },
+    {
+      "path": "results/sim_unified_core_problem_summary.csv",
+      "exists": true,
+      "size_bytes": 5761,
+      "sha256": "624720aede320271262a113df2427ce2a2dd93fd0e8b02411976db9db2556f8b"
+    }
+  ],
+  "notes": "Summary table for the unified core-problem simulation matrix."
+}

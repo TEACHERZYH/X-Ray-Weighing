@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-07-02T15:57:02.162684+00:00",
+  "script": "/data/zyh/projects/X-RAY/experiments/clean_real_xray_data.py",
+  "argv": [
+    "experiments/clean_real_xray_data.py"
+  ],
+  "args": {
+    "input": "/data/zyh/projects/X-RAY/data/real_xray_belt.csv",
+    "clean_output": "/data/zyh/projects/X-RAY/data/real/real_xray_belt_clean.csv",
+    "qc_output": "/data/zyh/projects/X-RAY/data/real/real_xray_belt_clean_qc.csv",
+    "report": "/data/zyh/projects/X-RAY/results/real_data_cleaning_report.csv",
+    "profile": "/data/zyh/projects/X-RAY/results/real_data_profile.csv"
+  },
+  "python": "3.10.6 | packaged by conda-forge | (main, Aug 22 2022, 20:36:39) [GCC 10.4.0]",
+  "platform": "Linux-4.4.0-116-generic-x86_64-with-glibc2.27",
+  "git": {
+    "commit": "",
+    "branch": "",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [],
+    "status_short_all": []
+  },
+  "inputs": [
+    {
+      "path": "data/real_xray_belt.csv",
+      "exists": true,
+      "size_bytes": 5542094,
+      "sha256": "b43d08de275ff80f4a290cede8ae30e0cab343d4e957f0b256659d74b24c4823"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/real_data_cleaning_report.csv",
+      "exists": true,
+      "size_bytes": 1030,
+      "sha256": "e321b0dda050b280d5e6a2923112aa2d3795a67f63c21f61ed7ff9d5b60feb98"
+    }
+  ],
+  "notes": "Real X-ray belt data cleaning output. Raw and cleaned real data are intentionally kept under ignored data paths."
+}

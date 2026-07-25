@@ -1,0 +1,24 @@
+# Generated data
+data/simulated/*.csv
+data/simulated/*.meta.json
+data/real_like/*.csv
+data/real_like/*.meta.json
+data/raw/
+data/real/
+data/real_xray_belt.csv
+
+# Large or regenerated experiment outputs
+results/sim_predictions.csv
+results/figures/
+models/
+paper/qa/
+build/
+logs/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db

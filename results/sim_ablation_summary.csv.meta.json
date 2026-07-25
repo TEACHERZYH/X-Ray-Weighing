@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-06-22T19:30:57.443202+00:00",
+  "script": "F:\\2026\\X-RAY\\experiments\\analyze_sim_ablation.py",
+  "argv": [
+    "experiments\\analyze_sim_ablation.py"
+  ],
+  "args": {},
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "3dc092733bf1bd7641250595611e52882f9ed7f3",
+    "branch": "master",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "?? results/sim_ablation_summary.csv",
+      "?? results/sim_ablation_summary.csv.meta.json"
+    ],
+    "status_short_all": [
+      "?? results/sim_ablation_summary.csv",
+      "?? results/sim_ablation_summary.csv.meta.json"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "data\\simulated\\xray_belt_sim.csv",
+      "exists": true,
+      "size_bytes": 8267676,
+      "sha256": "96cae47765ce67b0415601c80c75899339310ede1592da802faf00c766ce39a3"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results\\sim_ablation_summary.csv",
+      "exists": true,
+      "size_bytes": 1463,
+      "sha256": "51c94d917499d4951f10ef27fc0c6a1dd3cd74baed39e409b4e0fb0467ad026d"
+    }
+  ],
+  "notes": "Supplementary simulation ablations for I0 update, missing-ash flag, and calibration sample selection."
+}

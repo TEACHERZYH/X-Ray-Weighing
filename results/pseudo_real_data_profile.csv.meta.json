@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-06-29T00:23:38.146431+00:00",
+  "script": "F:\\2026\\X-RAY\\experiments\\generate_pseudo_real_xray_data.py",
+  "argv": [
+    "experiments\\generate_pseudo_real_xray_data.py",
+    "--output",
+    "data\\real_like\\pseudo_real_xray_belt.csv",
+    "--summary",
+    "results\\pseudo_real_data_profile.csv",
+    "--sites",
+    "5",
+    "--devices-per-site",
+    "2",
+    "--installs-per-device",
+    "3",
+    "--seconds",
+    "1200",
+    "--seed",
+    "20260629"
+  ],
+  "args": {
+    "output": "data\\real_like\\pseudo_real_xray_belt.csv",
+    "summary": "results\\pseudo_real_data_profile.csv",
+    "sites": 5,
+    "devices_per_site": 2,
+    "installs_per_device": 3,
+    "seconds": 1200,
+    "seed": 20260629,
+    "inter_install_gap_s": 300
+  },
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:05:56) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git": {
+    "commit": "c489020d92dc4875586d2bc895f3bede7b1f899b",
+    "branch": "codex/innovation-sim-experiments",
+    "is_dirty": false,
+    "status_short": [],
+    "generated_status_short": [
+      "?? results/pseudo_real_data_profile.csv"
+    ],
+    "status_short_all": [
+      "?? results/pseudo_real_data_profile.csv"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "data/real_like/pseudo_real_xray_belt.csv",
+      "exists": true,
+      "size_bytes": 4492070,
+      "sha256": "b321991a4d0b516d5016583c0caa41fb281329b2493daa597047c4ba735d64b6"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/pseudo_real_data_profile.csv",
+      "exists": true,
+      "size_bytes": 930,
+      "sha256": "d38bc9109144e0dfa57ddc6a9fc61fbe61135367c967b43029e084895ec8d60b"
+    }
+  ],
+  "notes": "Profile summary for pseudo-real canonical X-ray belt weighing data."
+}
